@@ -15,7 +15,7 @@ interface ChooseQuestionBestAnswerUseCaseResponse {
 
 export class ChooseQuestionBestAnswerUseCase {
   constructor(
-    private questionsRepostiroy: QuestionsRepository,
+    private questionsRepository: QuestionsRepository,
     private answersRepository: AnswersRepository,
   ) {}
 
@@ -29,7 +29,7 @@ export class ChooseQuestionBestAnswerUseCase {
       throw new Error('Answer not found.')
     }
 
-    const question = await this.questionsRepostiroy.findById(
+    const question = await this.questionsRepository.findById(
       answer.questionId.toString(),
     )
 
@@ -43,7 +43,7 @@ export class ChooseQuestionBestAnswerUseCase {
 
     question.bestAnswerId = answer.id
 
-    await this.answersRepository.save(answer)
+    await this.questionsRepository.save(question)
 
     return { question }
   }
