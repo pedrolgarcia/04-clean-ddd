@@ -4,8 +4,6 @@ import { InMemoryQuestionsRepository } from 'test/repositories/in-memory-questio
 
 import { makeQuestion } from 'test/factories/make-question'
 
-import { Slug } from '../../enterprise/entities/value-objects/slug'
-
 let inMemoryQuestionsRepository: InMemoryQuestionsRepository
 let sut: FetchRecentQuestionsUseCase
 
