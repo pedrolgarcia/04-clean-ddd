@@ -5,8 +5,8 @@ import { AnswersRepository } from '../repositories/answers-repository'
 
 import { QuestionsRepository } from '../repositories/questions-repository'
 
-import { ResourceNotFoundError } from './errors/resource-not-found-error'
-import { NotAllowerError } from './errors/not-allowed-error'
+import { ResourceNotFoundError } from '@/core/errors/use-case-errors/resource-not-found-error'
+import { NotAllowerError } from '@/core/errors/use-case-errors/not-allowed-error'
 
 interface ChooseQuestionBestAnswerUseCaseRequest {
   authorId: string

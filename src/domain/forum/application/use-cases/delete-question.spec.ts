@@ -4,7 +4,7 @@ import { DeleteQuestionUseCase } from './delete-question'
 import { InMemoryQuestionsRepository } from 'test/repositories/in-memory-questions-repository'
 import { InMemoryQuestionAttachmentsRepository } from 'test/repositories/in-memory-question-attachments-repository'
 import { UniqueEntityId } from '@/core/entities/unique-entity-id'
-import { NotAllowerError } from './errors/not-allowed-error'
+import { NotAllowerError } from '@/core/errors/use-case-errors/not-allowed-error'
 import { makeQuestionAttachment } from 'test/factories/make-question-attachment'
 
 let inMemoryQuestionsRepository: InMemoryQuestionsRepository

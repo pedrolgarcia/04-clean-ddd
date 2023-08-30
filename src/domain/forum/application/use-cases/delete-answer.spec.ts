@@ -5,7 +5,7 @@ import { InMemoryAnswersRepository } from 'test/repositories/in-memory-answers-r
 import { InMemoryAnswerAttachmentsRepository } from 'test/repositories/in-memory-answer-attachments-repository'
 
 import { UniqueEntityId } from '@/core/entities/unique-entity-id'
-import { NotAllowerError } from './errors/not-allowed-error'
+import { NotAllowerError } from '@/core/errors/use-case-errors/not-allowed-error'
 import { makeAnswerAttachment } from 'test/factories/make-answer-attachment'
 
 let inMemoryAnswersRepository: InMemoryAnswersRepository
