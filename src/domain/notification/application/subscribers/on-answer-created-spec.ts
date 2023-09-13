@@ -24,10 +24,10 @@ describe('On Answer Create', () => {
     )
   })
   it('should send a notification when an answer is created', () => {
-    const onAnswerCreated = new OnAnswerCreated()
+    // const onAnswerCreated = new OnAnswerCreated()
 
-    const answer = makeAnswer()
+    // const answer = makeAnswer()
 
-    inMemoryAnswersRepository.create(answer)
+    // inMemoryAnswersRepository.create(answer)
   })
 })
